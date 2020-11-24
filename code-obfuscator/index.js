@@ -15,7 +15,7 @@
  * 
  * @Author: guanhaimin
  * @Date: 2020-11-16 13:58:52
- * @LastEditTime: 2020-11-24 18:49:49
+ * @LastEditTime: 2020-11-24 18:52:12
  * @LastEditors: guanhaimin
  * @Description: 
  * @FilePath: \code-obfuscator-demo\code-obfuscator\index.js
@@ -49,7 +49,7 @@ const configFile = path.join(currentDir, DEFAULT_CONFIG_FILENAME);
 console.log(configFile);
 const configObj = require(configFile);
 console.log(configObj);
-const outputDir = currenDir //path.join(path.resolve(), configObj["outputDir"]);
+const outputDir = currentDir //path.join(path.resolve(), configObj["outputDir"]);
 
 if (fs.existsSync(outputDir)) {
     // deleteFolder(outputDir);
