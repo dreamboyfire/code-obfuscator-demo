@@ -42,7 +42,8 @@ RUN chown 1000:1000 /myqpp
 # 执行加密
 RUN node ./code-obfuscator/index.js
 
-RUN cat ./api/index.js
+WORKDIR /myapp
+RUN ls
 
 # 暴露端口
 EXPOSE 3018 3019 3020 3021 5019
