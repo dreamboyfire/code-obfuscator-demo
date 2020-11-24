@@ -1,5 +1,8 @@
 FROM node:12-buster-slim
 
+# 安装https证书
+RUN apt-get update && apt-get install -y apt-transport-https ca-certificates
+
 # 修改时区
 RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo 'Asia/Shanghai' >/etc/timezone
 
