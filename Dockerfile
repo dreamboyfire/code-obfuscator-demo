@@ -23,9 +23,9 @@ COPY . /stemp
 
 RUN rm -rf package-lock.json
 
-RUN cnpm install
+RUN npm install
 
-RUN cnpm install -g pm2@4.4.1
+RUN npm install -g pm2@4.4.1
 
 RUN pm2 install pm2-logrotate
 
