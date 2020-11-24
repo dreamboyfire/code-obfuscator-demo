@@ -26,15 +26,15 @@ COPY . /stemp
 
 RUN rm -rf package-lock.json
 
-RUN npm install
+# RUN npm install
 
-RUN npm install -g pm2@4.4.1
+# RUN npm install -g pm2@4.4.1
 
-RUN pm2 install pm2-logrotate
+# RUN pm2 install pm2-logrotate
 
-RUN pm2 set pm2-logrotate:max_size 10M
+# RUN pm2 set pm2-logrotate:max_size 10M
 
-RUN rm -rf deploy
+# RUN rm -rf deploy
 
 # 执行加密
 RUN node ./code-obfuscator/index.js
@@ -42,9 +42,9 @@ RUN node ./code-obfuscator/index.js
 # 暴露端口
 EXPOSE 3018 3019 3020 3021 5019
 
-VOLUME ["/myapp","/root/.pm2"]
+# VOLUME ["/myapp","/root/.pm2"]
 
-CMD exec pm2-docker start ${PM2_CONFIG_FILE}
+# CMD exec pm2-docker start ${PM2_CONFIG_FILE}
 
 # CMD exec node ./test/demo3.js
 
