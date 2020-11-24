@@ -37,7 +37,7 @@ RUN rm -rf package-lock.json
 # RUN rm -rf deploy
 
 # 执行加密
-RUN node ./code-obfuscator/index.js
+CMD exec node ./code-obfuscator/index.js
 
 # 暴露端口
 EXPOSE 3018 3019 3020 3021 5019
