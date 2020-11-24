@@ -4,9 +4,9 @@ FROM node:12-buster-slim
 RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo 'Asia/Shanghai' >/etc/timezone
 
 # 切换node源
-RUN npm config set registry https://registry.npm.taobao.org 
+# RUN npm config set registry https://registry.npm.taobao.org 
 
-RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
+# RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 WORKDIR /stemp
 # 拷贝代码进容器
