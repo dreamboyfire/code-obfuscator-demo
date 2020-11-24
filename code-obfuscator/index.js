@@ -15,10 +15,10 @@
  * 
  * @Author: guanhaimin
  * @Date: 2020-11-16 13:58:52
- * @LastEditTime: 2020-11-18 11:07:10
+ * @LastEditTime: 2020-11-24 18:34:50
  * @LastEditors: guanhaimin
  * @Description: 
- * @FilePath: \spider-man-server\code-obfuscator\index.js
+ * @FilePath: \code-obfuscator-demo\code-obfuscator\index.js
  * @
  */
 
@@ -49,7 +49,7 @@ const configFile = path.join(currentDir, DEFAULT_CONFIG_FILENAME);
 console.log(configFile);
 const configObj = require(configFile);
 console.log(configObj);
-const outputDir = path.join(path.resolve(), configObj["outputDir"]);
+const outputDir = currentDir// path.join(path.resolve(), configObj["outputDir"]);
 
 if (fs.existsSync(outputDir)) {
     deleteFolder(outputDir);
