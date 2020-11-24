@@ -1,0 +1,24 @@
+{
+  "name": "code-obfuscator-demo",
+  "version": "1.0.0",
+  "description": "code-obfuscator-demo",
+  "main": "obfuscate.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dreamboyfire/code-obfuscator-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dreamboyfire/code-obfuscator-demo/issues"
+  },
+  "homepage": "https://github.com/dreamboyfire/code-obfuscator-demo#readme",
+  "dependencies": {
+    "javascript-obfuscator": "^2.9.4",
+    "lodash": "^4.17.20"
+  }
+}
