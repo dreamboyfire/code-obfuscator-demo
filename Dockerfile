@@ -35,6 +35,7 @@ RUN npm install
 # RUN pm2 set pm2-logrotate:max_size 10M
 
 # RUN rm -rf deploy
+RUN mkdir /myqpp
 RUN chown 1000:1000 /stemp
 RUN chown 1000:1000 /myqpp
 
