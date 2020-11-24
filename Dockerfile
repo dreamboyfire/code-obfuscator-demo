@@ -37,7 +37,7 @@ RUN rm -rf package-lock.json
 # RUN rm -rf deploy
 
 # 执行加密
-
+CMD "执行加密"
 CMD node ./code-obfuscator/index.js
 
 # 暴露端口
