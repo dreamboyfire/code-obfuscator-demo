@@ -26,7 +26,7 @@ COPY . /stemp
 
 RUN rm -rf package-lock.json
 
-# RUN npm install
+RUN npm install
 
 # RUN npm install -g pm2@4.4.1
 
