@@ -35,9 +35,14 @@ RUN npm install
 # RUN pm2 set pm2-logrotate:max_size 10M
 
 # RUN rm -rf deploy
+RUN chown 1000:1000 /stemp
+RUN chown 1000:1000 /myqpp
 
 # 执行加密
 RUN node ./code-obfuscator/index.js
+
+WORKDIR /stemp
+RUN ls
 
 # 暴露端口
 EXPOSE 3018 3019 3020 3021 5019
