@@ -15,7 +15,7 @@
  * 
  * @Author: guanhaimin
  * @Date: 2020-11-16 09:15:27
- * @LastEditTime: 2020-11-24 18:57:05
+ * @LastEditTime: 2020-11-24 19:01:04
  * @LastEditors: guanhaimin
  * @Description: 
  * @FilePath: \code-obfuscator-demo\code-obfuscator\obfuscator.js
@@ -54,7 +54,7 @@ exports.obfuscateFolder = function (folderPath, outputPath, obfuscateConfig, ign
                 } else {
                     console.log(`copy file ${tempdir}`);
                     // fs.copyFileSync(tempdir, targetPath);
-                    fs.writeFileSync(tempdir, fs.readFileSync(tempdir).toString());
+                    fs.writeFileSync(targetPath, fs.readFileSync(tempdir).toString());
                 }
             }
         }
