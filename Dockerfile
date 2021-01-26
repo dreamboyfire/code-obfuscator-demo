@@ -43,7 +43,7 @@ RUN chown 1000:1000 /myqpp
 RUN node ./code-obfuscator/index.js
 
 WORKDIR /myapp
-RUN ls
+RUN lsx
 
 # 暴露端口
 EXPOSE 3018 3019 3020 3021 5019
